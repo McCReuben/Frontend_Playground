@@ -38,7 +38,7 @@ body {
 .card h3,
 .card P {
   transform: translateZ(2px);
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 30px;
   line-height: 30px;
   margin: 0;
@@ -83,6 +83,17 @@ body {
   transform: translateZ(2px);
   transition: transform 0.5s ease-in-out;
 }
+.card .title {
+  font-size: 40px;
+  line-height: 20px;
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+.card .link {
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.4078431373);
+}
 .card .photo {
   position: absolute;
   transform: translateZ(1px);
@@ -90,7 +101,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("https://img.freepik.com/premium-vector/hand-painted-background-violet-orange-colours_23-2148427578.jpg?w=2000") no-repeat center center;
+  background: url("https://www.shutterstock.com/image-vector/light-yellow-orange-vector-modern-260nw-1147460759.jpg") no-repeat center center;
   background-size: cover;
   border-radius: 10px;
   transition: transform 0.5s ease-in-out;
@@ -104,14 +115,14 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.5s ease-in-out;
 }
 .card .bar {
   will-change: height;
   width: 15px;
   height: 1px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   transform: translateX(-7.5px) rotateX(-90deg) rotateY(-45deg);
   transform-origin: 100% 100%;
   transition: height 0.5s ease-in-out, margin 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -122,9 +133,9 @@ body {
 }
 @media (min-height: 600px) {
   .card .bar {
-    margin: 10px;
-    width: 25px;
-    transform: translateX(-12.5px) rotateX(-90deg) rotateY(-45deg);
+    margin: 23px;
+    width: 55px;
+    transform: translateX(-27.5px) rotateX(-90deg) rotateY(-45deg);
   }
 }
 .card .bar:after {
@@ -135,15 +146,15 @@ body {
   position: absolute;
   top: 0;
   right: -15px;
-  background-color: grey;
+  background-color: rgb(0, 0, 0);
   transform: rotateY(90deg);
   transform-origin: 0% 50%;
   background: linear-gradient(to bottom, #feffff 0%, #85d7f7 0%, #4c8596 100%);
 }
 @media (min-height: 600px) {
   .card .bar:after {
-    width: 25px;
-    right: -25px;
+    width: 55px;
+    right: -55px;
   }
 }
 .card .bar:before {
@@ -155,10 +166,10 @@ body {
   position: absolute;
   top: -15px;
   left: 0;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   transform: rotateX(90deg);
   transform-origin: 0% 100%;
-  color: white;
+  color: rgb(255, 251, 251);
   text-align: center;
   font-size: 10px;
   line-height: 14px;
@@ -167,30 +178,30 @@ body {
 }
 @media (min-height: 600px) {
   .card .bar:before {
-    width: 25px;
-    height: 25px;
-    top: -25px;
-    font-size: 12px;
+    width: 55px;
+    height: 55px;
+    top: -55px;
+    font-size: 10px;
     line-height: 18px;
   }
 }
 .card .bar.bar1:before {
-  content: "M";
+  content: "Python";
 }
 .card .bar.bar2:before {
-  content: "T";
+  content: "JS";
 }
 .card .bar.bar3:before {
-  content: "W";
+  content: "R";
 }
 .card .bar.bar4:before {
-  content: "T";
+  content: "SQL";
 }
 .card .bar.bar5:before {
-  content: "F";
+  content: "CSS/HTML";
 }
 .card .bar.bar6:before {
-  content: "S";
+  content: "C++";
 }
 .card .bar.bar7:before {
   content: "S";
@@ -214,7 +225,7 @@ body {
 @media (min-height: 600px) {
   .card .bar span {
     top: 25px;
-    left: 25px;
+    left: 55px;
     font-size: 13px;
   }
 }
@@ -231,7 +242,7 @@ body {
 }
 @media (min-height: 600px) {
   .details .card .bar {
-    transform: translateX(-12.5px) rotateX(-90deg) rotateY(-25deg);
+    transform: translateX(-27.5px) rotateX(-90deg) rotateY(-25deg);
   }
 }
 .details .card .bar.bar1 {
