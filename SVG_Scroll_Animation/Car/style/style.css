@@ -10,6 +10,17 @@ svg {
   left: 10%;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.cls-1 {
+  fill: none;
+  stroke: rgb(41, 33, 33);
+  stroke-miterlimit: 10;
+}
+
 section {
   height: 100vh;
   display: grid;
