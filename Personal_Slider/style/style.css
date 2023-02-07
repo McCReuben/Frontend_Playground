@@ -1,8 +1,9 @@
 :root {
-  --background-color: rgb(4, 9, 23);
+  --background-color: rgb(4, 9, 23); /* #040917; */
   --border-color: rgb(255, 255, 255, 0.1);
   --highlight-color: rgb(126, 87, 194);
   --yt-color: rgb(229, 57, 53);
+  /* #f8fafc */
 }
 
 body {
@@ -111,6 +112,15 @@ nav .nav-section {
   gap: 3rem;
 }
 
+.skill-scroll {
+  width: 120%;
+  height: 120%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 main {
   flex-grow: 1;
   position: relative;
@@ -173,9 +183,9 @@ main > article > .article-nav-section {
 
 main > article:first-child > .article-image-section {
   /* background-image: url("https://images.unsplash.com/photo-1565626424178-c699f6601afd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"); */
-  background-image: url("../raw/Me_New_Yorker2.png");
+  background-image: url("../raw/Me_New_Yorker4.png");
   /* background-size: contain; */
-  background-size: 1099px;
+  background-size: 1280px;
 }
 
 main > article:first-child > .overlay {
@@ -230,7 +240,7 @@ main > article > .article-title-section * {
 }
 
 main > article > .article-title-section > h2 {
-  flex-basis: 50%;
+  flex-basis: 70%;
   font-family: "Montserrat", sans-serif;
   font-size: 3.5rem;
   line-height: 3rem;
@@ -410,6 +420,23 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
 main > article > .article-description-section > p > .source-link {
   color: var(--highlight-color);
   display: inline;
+}
+
+main > article > .skill-scroll-section {
+  border-left: 1px solid var(--border-color);
+  /* flex-direction: column; */
+  justify-content: flex-end;
+  /* padding: 4rem; */
+  padding-bottom: 5rem;
+  overflow: hidden;
+  /* width: 10%; */
+
+  /* padding-top: 0rem;
+  padding-left: 0rem; */
+  /* border-left: none; */
+  /* justify-content: center; */
+  /* order: 3; */
+  /* padding: 2rem; */
 }
 
 main > article .yt-link,
