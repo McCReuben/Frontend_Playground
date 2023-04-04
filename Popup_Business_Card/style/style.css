@@ -10,7 +10,6 @@ body {
   font-family: "Asar", serif;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -48,8 +47,8 @@ body {
 }
 @media (min-height: 600px) {
   .card h2,
-.card h3,
-.card P {
+  .card h3,
+  .card P {
     font-size: 40px;
     line-height: 40px;
   }
